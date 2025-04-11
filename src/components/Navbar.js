@@ -28,6 +28,9 @@ import { Help } from "@mui/icons-material";
 // import { Help } from "@mui/icons-material";
 import logo from "./logo.png"; 
 import { useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+// import i18n from "../i18n"; // adjust the path if necessary
+
 
 
 
@@ -43,9 +46,9 @@ const pages = [
   { label: "Mental Wellness", path: "/mentalwellness", icon: <PsychologyIcon /> },
   { label: "Health Education", path: "/healthed", icon: <SchoolIcon /> },
   { label: "Setting",icon: <Settings /> },
-  { label: "Log Out",icon: <Logout />  },
   { label: "Help",icon: <Help /> },
-  { label: "Language",icon: <Language /> },
+  { label: "Log Out",icon: <Logout />  },
+  // { label: "Language",icon: <Language /> },
 ]
  
 
@@ -57,6 +60,10 @@ const palette = {
 };
 
 export default function Navbar() {
+  const { t } = useTranslation();
+
+
+
   const location = useLocation();
 
   const theme = useTheme();
