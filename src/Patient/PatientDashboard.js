@@ -43,17 +43,17 @@ export default function PatientDashboard() {
 
 
   const features = [
-    { icon: <LocalHospital fontSize="large" />, title: "Health Records", link: "/patientrecords" },
-    { icon: <Medication fontSize="large" />, title: "Medicine Tracker", link: "/medicine-tracker" },
-    { icon: <Psychology fontSize="large" />, title: "Mental Wellness", link: "/mentalwellness" },
-    { icon: <Emergency fontSize="large" />, title: "Emergency", link: "/emergency" },
-    { icon: <School fontSize="large" />, title: "Health Education", link: "/healthed" },
-    { icon: <Chat fontSize="large" />, title: "Consultation", link: "/consultation" },
-    { icon: <FolderShared fontSize="large" />, title: "Patient Files", link: "/patient-records" },
-    { icon: <FitnessCenter fontSize="large" />, title: "Fitness Plans", link: "/fitness" },
-    { icon: <MonitorHeart fontSize="large" />, title: "Vitals Monitor", link: "/vitals" },
-    { icon: <EventNote fontSize="large" />, title: "Appointments", link: "/appointments" },
-    { icon: <Vaccines fontSize="large" />, title: "Vaccination", link: "/vaccination" },
+    { icon: <LocalHospital fontSize="large" />, title: "Health Records", link: "/patient/patientrecords" },
+    { icon: <Medication fontSize="large" />, title: "Medicine Tracker", link: "/patient/medicine-tracker" },
+    { icon: <Psychology fontSize="large" />, title: "Mental Wellness", link: "/patient/mentalwellness" },
+    { icon: <Emergency fontSize="large" />, title: "Emergency", link: "/patient/emergency" },
+    { icon: <School fontSize="large" />, title: "Health Education", link: "/patient/healthed" },
+    { icon: <Chat fontSize="large" />, title: "Consultation", link: "/patient/consultation" },
+    { icon: <FolderShared fontSize="large" />, title: "Patient Files", link: "/patient/patient-records" },
+    { icon: <FitnessCenter fontSize="large" />, title: "Fitness Plans", link: "/patient/fitness" },
+    { icon: <MonitorHeart fontSize="large" />, title: "Vitals Monitor", link: "/patient/vitals" },
+    { icon: <EventNote fontSize="large" />, title: "Appointments", link: "/patient/appointments" },
+    { icon: <Vaccines fontSize="large" />, title: "Vaccination", link: "/patient/vaccination" },
   ];
 
   return (
@@ -89,8 +89,8 @@ export default function PatientDashboard() {
             </Typography>
           </Box>
           <Box textAlign="right">
-            <Avatar src="https://images.pexels.com/photos/30333759/pexels-photo-30333759/free-photo-of-thoughtful-woman-in-blue-dragons-hoodie-indoors.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" sx={{ width: 80, height: 80, boxShadow: 2, mb: 1 }} />  
-           
+            <Avatar src="https://images.pexels.com/photos/30333759/pexels-photo-30333759/free-photo-of-thoughtful-woman-in-blue-dragons-hoodie-indoors.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" sx={{ width: 80, height: 80, boxShadow: 2, mb: 1 }} />
+
           </Box>
         </Paper>
 
@@ -113,7 +113,7 @@ export default function PatientDashboard() {
               <TextField fullWidth label="SpO₂ Level (%)" variant="outlined" />
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-             <Button variant="contained" color="primary" size="large" fullWidth onClick={() => alert("Vitals Submitted!")}>
+              <Button variant="contained" color="primary" size="large" fullWidth onClick={() => alert("Vitals Submitted!")}>
                 Submit Vitals
               </Button>
             </Grid>

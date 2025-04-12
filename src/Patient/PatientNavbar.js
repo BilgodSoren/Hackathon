@@ -38,11 +38,11 @@ import SettingsIcon from '@mui/icons-material/Settings';
 const drawerWidth = 240;
 
 const pages = [
-  { label: "Dashboard", path: "/", icon: <DashboardIcon /> },
+  { label: "Dashboard", path: "/patient", icon: <DashboardIcon /> },
   // { label: "Patient Records", path: "/patient-records", icon: <FolderSharedIcon /> },
   { label: "Doctor Records", path: "/doctor-records", icon: <PeopleAltIcon /> },
-  { label: "Consultation", path: "/consultation", icon: <ChatIcon /> },
-  { label: "Emergency", path: "/emergency", icon: <EmergencyIcon /> },
+  { label: "Consultation", path: "/patient/consultation", icon: <ChatIcon /> },
+  { label: "Emergency", path: "/patient/emergency", icon: <EmergencyIcon /> },
   { label: "Medicine Tracker", path: "/medicinetracker", icon: <MedicationIcon /> },
   { label: "Mental Wellness", path: "/mentalwellness", icon: <PsychologyIcon /> },
   { label: "Health Education", path: "/healthed", icon: <SchoolIcon /> },
