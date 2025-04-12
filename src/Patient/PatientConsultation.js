@@ -9,7 +9,7 @@ import {
   Divider,
 } from "@mui/material";
 
-export default function Consultation() {
+export default function PatientConsultation() {
   const [form, setForm] = useState({ name: "", issue: "", mode: "Online" });
 
   const handleChange = (e) => {

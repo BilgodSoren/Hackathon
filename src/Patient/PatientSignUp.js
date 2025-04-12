@@ -1,11 +1,11 @@
 import React from 'react';
 import { Typography, Button, Box, TextField, useTheme, ThemeProvider } from '@mui/material';
 import { NavLink } from 'react-router-dom';
-import SignupTheme from './SignupTheme';
-import logo from './logo.png'; // Adjust the path to your logo image
-import Register from '../pages/Register';
 
-const Signup = () => {
+import logo from './logo.png'; // Adjust the path to your logo image
+import Register from '../Universal/Register';
+import SignupTheme from '../Universal/SignUp/SignupTheme';
+const PatientSignup = () => {
 
 
   const onSubmit = (e) => {
@@ -28,19 +28,20 @@ const Signup = () => {
             <TextField placeholder="Full Name" sx={SignupTheme.inputField} />
             <TextField placeholder="Password" type="password" sx={SignupTheme.inputField} />
             <TextField placeholder="Confirm Password" type="password" sx={SignupTheme.inputField} />
+            <TextField placeholder="Email Address"  sx={SignupTheme.inputField} />
             {/* <TextField placeholder="Email Address" type="email" sx={SignupTheme.inputField} /> */}
 
-              <TextField placeholder="State" select sx={SignupTheme.selectField} SelectProps={{ native: true }}>
+              {/* <TextField placeholder="State" select sx={SignupTheme.selectField} SelectProps={{ native: true }}>
                 <option value="">Select State</option>
                 <option value=""></option>
                 <option value=""></option>
-              </TextField>
+              </TextField> */}
             {/* Country and State Selection */}
             <Box sx={SignupTheme.selectContainer}>
              
             </Box>
 
-            <Button component={NavLink} to="/register" type="submit" variant="contained" >
+            <Button component={NavLink} to="/patientdashboard" type="submit" variant="contained" >
               Sign Up
             </Button>
           </Box>
@@ -62,4 +63,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default PatientSignup;

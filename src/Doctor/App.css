@@ -1,0 +1,54 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f6f8;
+}
+
+.MuiDrawer-paper {
+  background-color: #263238 !important;
+  color: #fff !important;
+}
+
+.sidebarIcon {
+  color: #fff;
+}
+
+.dashboardStatBox {
+  padding: 16px;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.emergencyCard {
+  padding: 16px;
+  background-color: #ffebee;
+  border-radius: 8px;
+}
+
+.profileCard {
+  padding: 24px;
+  background-color: #f0f4c3;
+  border-radius: 8px;
+}
+
+.patientAvatar {
+  width: 100px;
+  height: 100px;
+  background-color: #1976d2;
+}
+
+/* Apply unique background for different pages */
+.pageWrapper {
+  padding: 24px;
+}
+
+.pageTitle {
+  margin-bottom: 16px;
+}
+
+/* Responsive grid spacing */
+.MuiGrid-item {
+  padding: 12px;
+}

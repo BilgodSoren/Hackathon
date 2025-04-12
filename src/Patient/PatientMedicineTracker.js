@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-export default function MedicineTracker() {
+export default function PatientMedicineTracker() {
   const [medicines, setMedicines] = useState([]);
   const [medicine, setMedicine] = useState("");
 

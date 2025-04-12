@@ -26,9 +26,10 @@ import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import { Language, Logout, Settings } from "@mui/icons-material";
 import { Help } from "@mui/icons-material";
 // import { Help } from "@mui/icons-material";
-import logo from "./logo.png"; 
+import logo from "./logo.png";
 import { useLocation } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import SettingsIcon from '@mui/icons-material/Settings';
+// import { useTranslation } from "react-i18next";
 // import i18n from "../i18n"; // adjust the path if necessary
 
 
@@ -42,15 +43,15 @@ const pages = [
   { label: "Doctor Records", path: "/doctor-records", icon: <PeopleAltIcon /> },
   { label: "Consultation", path: "/consultation", icon: <ChatIcon /> },
   { label: "Emergency", path: "/emergency", icon: <EmergencyIcon /> },
-  { label: "Medicine Tracker", path: "/medicine-tracker", icon: <MedicationIcon /> },
+  { label: "Medicine Tracker", path: "/medicinetracker", icon: <MedicationIcon /> },
   { label: "Mental Wellness", path: "/mentalwellness", icon: <PsychologyIcon /> },
   { label: "Health Education", path: "/healthed", icon: <SchoolIcon /> },
-  { label: "Setting",icon: <Settings /> },
-  { label: "Help",icon: <Help /> },
-  { label: "Log Out",icon: <Logout />  },
+
+  { text: 'Settings', icon: <SettingsIcon />, path: '/patient/patientsetting' },
+  { text: 'Log Out', icon: <Logout />, isLogout: true },
   // { label: "Language",icon: <Language /> },
 ]
- 
+
 
 
 const palette = {
@@ -59,8 +60,8 @@ const palette = {
   highlight: "#1B2632",
 };
 
-export default function Navbar() {
-  const { t } = useTranslation();
+export default function PatientNavbar() {
+
 
 
 
@@ -96,28 +97,28 @@ export default function Navbar() {
       </Toolbar>
       <List>
         {pages.map((page, index) => (
-         <ListItem
-         button
-         key={index}
-         component={page.path ? Link : "div"}
-         to={page.path || "#"}
-         sx={{
-           color: location.pathname === page.path ? "#00e676" : palette.text,
-           fontWeight: "bold",
-           backgroundColor: location.pathname === page.path ? "#1e3a5f" : "transparent",
-           '&:hover': { backgroundColor: palette.highlight },
-         }}
-         onClick={() => {
-           if (isMobile) setMobileOpen(false);
-         }}
-       >
+          <ListItem
+            button
+            key={index}
+            component={page.path ? Link : "div"}
+            to={page.path || "#"}
+            sx={{
+              color: location.pathname === page.path ? "#00e676" : palette.text,
+              fontWeight: "bold",
+              backgroundColor: location.pathname === page.path ? "#1e3a5f" : "transparent",
+              '&:hover': { backgroundColor: palette.highlight },
+            }}
+            onClick={() => {
+              if (isMobile) setMobileOpen(false);
+            }}
+          >
             <ListItemIcon sx={{ color: palette.text }}>{page.icon}</ListItemIcon>
             <ListItemText
               primary={page.label}
               primaryTypographyProps={{ fontWeight: "bold" }}
             />
           </ListItem>
-          
+
         ))}
       </List>
     </Box>
@@ -143,7 +144,7 @@ export default function Navbar() {
         sx={{
           width: drawerWidth,
           flexShrink: 0,
-          [`& .MuiDrawer-paper`]: {
+          '& .MuiDrawer-paper': {
             width: drawerWidth,
             boxSizing: "border-box",
             backgroundColor: palette.background,
@@ -151,6 +152,7 @@ export default function Navbar() {
           },
         }}
       >
+
         {drawerContent}
       </Drawer>
     </Box>

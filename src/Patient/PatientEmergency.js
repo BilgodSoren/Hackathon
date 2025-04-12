@@ -5,11 +5,11 @@ import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
-export default function Emergency() {
+export default function PatientEmergency() {
   return (
     <Paper sx={{ margin: 4, padding: 3 }}>
       <Typography variant="h5" gutterBottom>
-        Emergency Assistance
+        PatientEmergency Assistance
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>

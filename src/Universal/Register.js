@@ -11,8 +11,10 @@ import {
 } from "@mui/material";
 import LocalHospitalIcon from "@mui/icons-material/LocalHospital";
 import PersonIcon from "@mui/icons-material/Person";
+import { NavLink } from "react-router-dom";
+import DoctorCredentials from "../Doctor/DoctorCredentials";
 
-export default function RegistrationChoice() {
+export default function Register() {
   const navigate = useNavigate();
   const theme = useTheme();
 
@@ -82,7 +84,7 @@ export default function RegistrationChoice() {
               <Button
                 variant="contained"
                 size="large"
-                onClick={() => navigate("/doctor-registration")}
+                component={NavLink} to="/register/doctor/signup" 
                 sx={{
                   bgcolor: "#1976d2",
                   ":hover": { bgcolor: "#115293" },
@@ -129,7 +131,7 @@ export default function RegistrationChoice() {
               <Button
                 variant="contained"
                 size="large"
-                onClick={() => navigate("/patient-registration")}
+                component={NavLink} to="/patient/signup"
                 sx={{
                   bgcolor: "#9c27b0",
                   ":hover": { bgcolor: "#7b1fa2" },

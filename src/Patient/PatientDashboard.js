@@ -35,15 +35,15 @@ import {
 } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import dashboardImg from "./dashboardimg.png";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 // import i18n from "./I18n";
 
-export default function Dashboard() {
+export default function PatientDashboard() {
   const navigate = useNavigate();
 
 
   const features = [
-    { icon: <LocalHospital fontSize="large" />, title: "Health Records", link: "/patient-records" },
+    { icon: <LocalHospital fontSize="large" />, title: "Health Records", link: "/patientrecords" },
     { icon: <Medication fontSize="large" />, title: "Medicine Tracker", link: "/medicine-tracker" },
     { icon: <Psychology fontSize="large" />, title: "Mental Wellness", link: "/mentalwellness" },
     { icon: <Emergency fontSize="large" />, title: "Emergency", link: "/emergency" },

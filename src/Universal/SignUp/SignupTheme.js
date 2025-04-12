@@ -62,7 +62,7 @@ const SignupTheme = createTheme({
     backgroundColor: 'rgba(42, 41, 39, 1)',
   },
   imageContainer: {
-    backgroundColor: 'rgba(42, 41, 39, 1)',
+    backgroundColor: 'rgb(34, 94, 205)',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
