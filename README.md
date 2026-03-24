@@ -17,18 +17,8 @@
 
 **Languages & Tools**
 - Python | JavaScript | SQL  
-- NumPy | Pandas  
-- Node.js | Express  
 - React | HTML | CSS  
-
-**Databases**
-- MySQL | MSSQL  
-
-**Other Skills**
-- Data Cleaning & Analysis  
-- Spreadsheet Automation (Excel / Google Sheets)  
-- API Integration  
-- Git & GitHub Collaboration  
+ 
 
 ---
 
@@ -43,26 +33,10 @@
 ## 📂 Featured Projects
 - 🔹 **Data Processing & Automation Tools**
 - 🔹 **Full-Stack Web Applications**
-- 🔹 **AI-assisted Productivity Solutions**
-- 🔹 **Spreadsheet-based Data Systems**
+
 
 > *(Check pinned repositories for live demos and source code)*
 
 ---
 
-## 📈 What I Bring to a Hackathon Team
-- Clear logic & structured thinking  
-- Reliable task ownership  
-- Clean documentation  
-- Calm execution under deadlines  
 
----
-
-## 🤝 Let’s Collaborate
-If you’re building something meaningful or competing in a hackathon, I’m always open to collaboration.
-
-📫 **Connect with me via GitHub issues or discussions**
-
----
-
-⭐ *If you like my work, consider starring the repositories — it helps a lot!*
